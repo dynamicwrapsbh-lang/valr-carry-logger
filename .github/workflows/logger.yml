@@ -1,0 +1,31 @@
+name: hourly-carry-logger
+
+on:
+  schedule:
+    - cron: "5 * * * *"     # 5 past every hour (after VALR's funding settles on the hour)
+  workflow_dispatch:         # adds a manual "Run workflow" button for testing
+
+permissions:
+  contents: write            # lets the job save the CSV back to the repo
+
+concurrency:
+  group: logger              # never two runs at once
+  cancel-in-progress: false
+
+jobs:
+  log:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python logger.py
+      - name: Commit the log
+        run: |
+          git config user.name "logger-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add valr_carry_log.csv
+          git commit -m "log $(date -u +'%Y-%m-%dT%H:%M')" || echo "nothing new"
+          git push
