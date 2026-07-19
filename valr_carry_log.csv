@@ -1,0 +1,2 @@
+utc_time,best_bid,best_ask,spread_pct,bid_depth_usd,ask_depth_usd,last_funding_rate,last_funding_time,perp_last,spot_last,basis_pct
+2026-07-19T14:41:31+00:00,64510.0,64530.0,0.031,195969,201567,2e-05,2026-07-19T14:00:00Z,64515.0,64489.0,0.0403
