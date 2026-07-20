@@ -1,0 +1,2 @@
+utc_time,avg_30d_ann_pct,basis_pct,perp_mid,event,assumed_fill,fill_price,fee_usd,notional_usd,inherited_feast
+2026-07-20T07:28:35+00:00,12.792,0.0483,64157.0,ENTER,maker@ask,64172.0,0.0,500.0,True
