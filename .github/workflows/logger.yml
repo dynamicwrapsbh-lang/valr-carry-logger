@@ -2,7 +2,7 @@ name: hourly-carry-logger
 
 on:
   schedule:
-    - cron: "5 * * * *"     # 5 past every hour (after VALR's funding settles on the hour)
+    - cron: "7,37 * * * *"     # 5 past every hour (after VALR's funding settles on the hour)
   workflow_dispatch:         # adds a manual "Run workflow" button for testing
 
 permissions:
