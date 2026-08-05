@@ -1,12 +1,12 @@
 {
   "status": "IN",
   "round_trips_completed": 0,
-  "cum_funding_usd": 3.797,
+  "cum_funding_usd": 3.808,
   "created": "2026-07-20T07:28:29+00:00",
   "entry_time": "2026-07-20T07:28:35+00:00",
   "entry_price": 64172.0,
   "entry_basis_pct": 0.0483,
   "notional_usd": 500.0,
-  "last_accrued_time": "2026-08-04T23:00:00+00:00",
-  "last_run": "2026-08-04T23:35:33+00:00"
+  "last_accrued_time": "2026-08-05T00:00:00+00:00",
+  "last_run": "2026-08-05T00:58:29+00:00"
 }
