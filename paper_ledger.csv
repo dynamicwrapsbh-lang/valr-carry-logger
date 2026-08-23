@@ -654,3 +654,4 @@ utc_time,avg_30d_ann_pct,basis_pct,perp_mid,event,assumed_fill,fill_price,fee_us
 2026-08-23T18:41:03+00:00,17.75,0.0336,77391.0,ACCRUE,1,0.006,8.2205,0.0483
 2026-08-23T19:28:38+00:00,17.735,0.0097,77346.0,ACCRUE,1,0.0065,8.227,0.0483
 2026-08-23T19:48:30+00:00,ERROR,"('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
+2026-08-23T20:33:08+00:00,17.72,0.0329,77440.0,ACCRUE,1,0.006,8.233,0.0483
